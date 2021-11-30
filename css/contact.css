@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Courgette', cursive;
+}
+
+/* header */
+
+header nav{
+    
+    background-color: rgb(111, 114, 114);
+    height: 70px;
+    width: 100%;
+    position:sticky;
+    z-index: 2;
+    box-shadow: 2px 3px 10px rgb(192, 189, 189);
+}
+
+header h1 {
+    position: absolute;
+    top: 25%;
+    margin: auto 0;
+    font-family: 2.5em;
+}
+
+header li{
+    list-style: none;
+    font-size: 1.5em;
+    float: left;
+    margin-right: 30px;
+}
+nav {
+    margin-bottom: 5px;
+}
+ul{
+    position: absolute;
+    right: 0;
+    top: 25%;
+    float: right;
+    display: block;
+    
+}
+
+
+nav a {
+    
+    text-decoration: none; 
+    transition: all ease-in-out .2s;
+}
+nav a:after {
+    transition: all ease-in-out .2s;
+    background: none repeat scroll 0 0 #ffffff;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+}
+nav a:hover:after {
+    width: 100%;
+    
+}
+
+nav a:hover {
+    color : #ffffff;
+}
+
+.active{
+    color : #ffffff;
+    border-bottom: 2px solid white;
+}
+
+.banniere{
+    width: 100%;
+    height: 315px;
+    background: linear-gradient(0.25turn, rgba(0,0,0, .95), rgba(0,0,0, .1)),
+    no-repeat url("../img/banniere.jpg");
+    margin-bottom: 10px;
+    
+}
+
+div p{
+    position: absolute;
+    width: 40%;
+    color: white;
+    font-size: 4em;
+    display: block;
+    /*background: rgba(109, 18, 18, .5);*/
+    margin: auto 0;
+}
+
+/*body*/
+section{
+    margin: 50px 0;
+}
+iframe + h2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+#pseudo input, #mail input{
+    width: 70%;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid rgb(92, 91, 91);
+    padding:3px;
+    display: block;
+    margin-top: 10px;
+}
+#desc label{
+    display: block;
+}
+#pseudo input:focus{
+    border: none;
+    border: 2px solid rgb(17, 142, 226);
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+textarea{
+    width: 400px;
+    margin-top: 10px;
+}
+
+form div{
+    margin: 10px 20px;
+    flex: 1 40%;
+    /*align-items: center;
+    justify-content: space-between;*/
+}
+div label sup{
+    color:red;
+}
+
+#animal{
+    width: 150px;
+    height: auto;
+    padding: 3px;
+}
+
+#reset{
+    padding: 10px 15px;
+    border:rgb(255, 255, 255) 2px solid;
+    align-items: center;
+    border-radius: 3px;
+}
+#reset:hover{
+    background-color:rgb(37, 37, 37);
+    color: white;
+    cursor:pointer;
+}
+
+#button{
+    padding: 10px 15px;
+    background-color:rgb(21, 139, 248);
+    color: white;
+    align-items: center;
+    border: white 0 ;
+    border-radius: 3px;
+}
+
+#button:hover{
+    background-color:rgb(21, 248, 123);
+    cursor:pointer;
+}
+
+/*footer*/
+hr{
+    margin-top: 50px;
+}
+
+footer{
+    height: 150px;
+    background: rgb(49, 47, 47);
+    color: white;
+}
+
+footer address{
+    margin: auto 0;
+}
