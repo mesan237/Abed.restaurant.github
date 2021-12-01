@@ -9,6 +9,10 @@ body{
 }
 
 /* header */
+header{
+    position: relative;
+    margin-bottom: 80px;
+}
 
 header nav{
     
@@ -74,6 +78,8 @@ nav a:hover {
 }
 
 .banniere{
+    position: relative;
+    top: 80px;
     width: 100%;
     height: 315px;
     background: linear-gradient(0.25turn, rgba(0,0,0, .95), rgba(0,0,0, .1)),
@@ -148,6 +154,11 @@ td p{
 .event{
     text-align: center;
 }
+table{
+    position: relative;
+    border-spacing: 40px;
+}
+
 /*footer*/
 
 footer{
