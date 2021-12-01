@@ -30,6 +30,10 @@ header h1 {
     top: 25%;
     margin: auto 0;
     font-family: 2.5em;
+    color: aqua;
+}
+h1 span{
+    color: white;
 }
 
 header li{
@@ -49,7 +53,6 @@ ul{
     display: block;
     
 }
-
 
 nav a {
     
@@ -79,7 +82,7 @@ nav a:hover {
     color : #ffffff;
     border-bottom: 2px solid white;
 }
-
+/* image on backgroun*/
 .banniere{
     position: relative;
     top: 72px;
@@ -91,26 +94,56 @@ nav a:hover {
     
 }
 
-div p{
+div.banniere p{
     position: absolute;
     width: 40%;
     color: white;
     font-size: 3.5em;
     display: block;
-    /*background: rgba(109, 18, 18, .5);*/
-    margin: auto 0;
 }
 
 /* --- body ----*/
 section{
-    margin: 50px 0;
+    margin: 80px 0;
 }
-iframe + h2{
+
+section > div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    
+}
+
+section .location{
+    flex: 1 20%;
+    margin-right: 3%;
+    margin-left: 3%;
+    display: flex;
+    flex-flow: column;
+    background-color: #b4ddee;
+    border: thick double #32a1ce;
+    border-radius: 5px;
+    
+}
+.location h2{
+    margin-bottom: 20px;
+}
+section iframe{
+    flex: 1 70%;
+    height: 300px;
+    margin-right: 3%;
+}
+
+section div:first-child+h2{
     text-align: center;
+}
+
+/* form style*/
+
+section form{
     margin-top: 50px;
 }
-
-
 #pseudo input, #mail input{
     width: 70%;
     height: 30px;
@@ -155,23 +188,27 @@ div label sup{
     flex-flow: column;
     justify-content: space-around;
 }
-
+form .button{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
 #reset{
     padding: 10px 15px;
     border:rgb(255, 255, 255) 2px solid;
     align-items: center;
     border-radius: 3px;
-    background-color: rgb(187, 184, 184);
+    background-color: rgba(133, 128, 128, 0.7);
+    color: white;
 }
 #reset:hover{
-    background-color:rgb(37, 37, 37);
-    color: white;
+    background-color:rgb(121, 118, 118);
     cursor:pointer;
 }
 
 #button{
     padding: 10px 15px;
-    background-color:rgb(21, 139, 248);
+    background-color:rgba(12, 168, 82, 0.7);
     color: white;
     align-items: center;
     border: white 0 ;
@@ -189,10 +226,9 @@ hr{
 }
 
 footer address{
-    display: block;
     position: absolute;
     top: 30%;
-    
+    width: 100%;
     padding-top:30px ;
     border-top:  2px solid white;
 }

@@ -29,6 +29,11 @@ header h1 {
     top: 25%;
     margin: auto 0;
     font-family: 2.5em;
+    color: aqua;
+}
+
+h1 span{
+    color: white;
 }
 
 header li{
@@ -131,7 +136,7 @@ footer address{
     display: block;
     position: absolute;
     top: 30%;
-    
+    width: 100%;
     padding-top:30px ;
     border-top:  2px solid white;
 }

@@ -175,7 +175,7 @@ footer address{
     display: block;
     position: absolute;
     top: 30%;
-    
+    width: 100%;
     padding-top:30px ;
     border-top:  2px solid white;
 }
