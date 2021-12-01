@@ -6,15 +6,16 @@
 body{
     box-sizing: border-box;
     margin: 0;
-    /* font-family: 'Courgette', cursive; */
     font-family: 'Merienda One', cursive;
 }
 
-/* header */
+/* --- header --- */
 header{
     position: relative;
     margin-bottom: 80px;
 }
+
+/* nav-bar */
 
 header nav{
     
@@ -25,17 +26,18 @@ header nav{
     z-index: 2;
     box-shadow: 2px 3px 10px rgb(192, 189, 189);
 }
-
+/* h1 Restaurant*/
 header h1 {
     position: absolute;
     top: 25%;
     margin: auto 0;
     font-family: 2.5em;
+    color: aqua;
 }
 
 header li{
     list-style: none;
-    font-size: 1.5em;
+    font-size: 1.1em;
     float: left;
     margin-right: 30px;
 }
@@ -51,12 +53,13 @@ ul{
     
 }
 
-
+/*link*/
 nav a {
     
     text-decoration: none; 
     transition: all ease-in-out .2s;
     text-transform: uppercase;
+    color: aqua;
 }
 nav a:after {
     transition: all ease-in-out .2s;
@@ -75,14 +78,16 @@ nav a:hover {
     color : #ffffff;
 }
 
+/*Focus on the link */
 .active{
     color : #ffffff;
     border-bottom: 2px solid white;
 }
 
+/*image in background*/
 .banniere{
     position: relative;
-    top: 80px;
+    top: 72px;
     width: 100%;
     height: 315px;
     background: linear-gradient(0.25turn, rgba(0,0,0, .95), rgba(0,0,0, .1)),
@@ -91,6 +96,7 @@ nav a:hover {
     
 }
 
+/*Welcome text style*/
 div p{
     position: absolute;
     width: 40%;
@@ -100,7 +106,7 @@ div p{
     margin: auto 0;
 }
 
-/* body */
+/* --- body --- */
 article{
     border-bottom: 600px;
 
@@ -163,16 +169,20 @@ table{
 hr{
     margin-top: 50px;
 }
-/*footer*/
+/* --- footer --- */
 
-
-footer{
+footer address{
+    display: block;
+    position: absolute;
+    top: 30%;
     
+    padding-top:30px ;
+    border-top:  2px solid white;
+}
+footer{
+    position: relative;
     height: 150px;
     background: rgb(49, 47, 47);
     color: white;
 }
 
-footer address{
-    margin: auto 0;
-}

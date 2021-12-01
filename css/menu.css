@@ -33,7 +33,7 @@ header h1 {
 
 header li{
     list-style: none;
-    font-size: 1.5em;
+    font-size: 1.1em;
     float: left;
     margin-right: 30px;
 }
@@ -51,7 +51,7 @@ ul{
 
 
 nav a {
-    
+    color: aqua;
     text-decoration: none; 
     transition: all ease-in-out .2s;
     text-transform: uppercase;
@@ -80,7 +80,7 @@ nav a:hover {
 
 .banniere{
     position: relative;
-    top: 80px;
+    top: 72px;
     width: 100%;
     height: 315px;
     background: linear-gradient(0.25turn, rgba(0,0,0, .95), rgba(0,0,0, .1)),
@@ -125,15 +125,19 @@ table td:nth-child(1){
     background-color: rgba(214, 212, 210, 0.5);
     padding: 17px;
 }
-/*footer*/
+/* --- footer --- */
 
-footer{
+footer address{
     display: block;
+    position: absolute;
+    top: 30%;
+    
+    padding-top:30px ;
+    border-top:  2px solid white;
+}
+footer{
+    position: relative;
     height: 150px;
     background: rgb(49, 47, 47);
     color: white;
-}
-
-footer address{
-    margin: auto 0;
 }

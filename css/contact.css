@@ -9,7 +9,7 @@ body{
     font-family: 'Merienda One', cursive;
 }
 
-/* header */
+/* --- header --- */
 header{
     position: relative;
     margin-bottom: 80px;
@@ -34,7 +34,7 @@ header h1 {
 
 header li{
     list-style: none;
-    font-size: 1.5em;
+    font-size: 1.1em;
     float: left;
     margin-right: 30px;
 }
@@ -56,6 +56,7 @@ nav a {
     text-decoration: none; 
     transition: all ease-in-out .2s;
     text-transform: uppercase;
+    color: aqua;
 }
 nav a:after {
     transition: all ease-in-out .2s;
@@ -81,7 +82,7 @@ nav a:hover {
 
 .banniere{
     position: relative;
-    top: 80px;
+    top: 72px;
     width: 100%;
     height: 315px;
     background: linear-gradient(0.25turn, rgba(0,0,0, .95), rgba(0,0,0, .1)),
@@ -100,7 +101,7 @@ div p{
     margin: auto 0;
 }
 
-/*body*/
+/* --- body ----*/
 section{
     margin: 50px 0;
 }
@@ -182,17 +183,22 @@ div label sup{
     cursor:pointer;
 }
 
-/*footer*/
+/* --- footer --- */
 hr{
     margin-top: 50px;
 }
 
+footer address{
+    display: block;
+    position: absolute;
+    top: 30%;
+    
+    padding-top:30px ;
+    border-top:  2px solid white;
+}
 footer{
+    position: relative;
     height: 150px;
     background: rgb(49, 47, 47);
     color: white;
-}
-
-footer address{
-    margin: auto 0;
 }
