@@ -2,10 +2,12 @@
     margin: 0;
     
 }
+
 body{
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Courgette', cursive;
+    /* font-family: 'Courgette', cursive; */
+    font-family: 'Merienda One', cursive;
 }
 
 /* header */
@@ -54,6 +56,7 @@ nav a {
     
     text-decoration: none; 
     transition: all ease-in-out .2s;
+    text-transform: uppercase;
 }
 nav a:after {
     transition: all ease-in-out .2s;
@@ -92,9 +95,8 @@ div p{
     position: absolute;
     width: 40%;
     color: white;
-    font-size: 4em;
+    font-size: 3.5em;
     display: block;
-    /*background: rgba(109, 18, 18, .5);*/
     margin: auto 0;
 }
 
@@ -107,7 +109,6 @@ table{
     width: 100%;
 }
  td{
-    border: 30px solid white;
     padding: 20px;
     color: rgb(61, 61, 61);
 
@@ -123,25 +124,25 @@ td p{
 }
 
 .first{
-    background: rgba(243, 61, 61, 0.4);
-    
-}
-.first:hover{
-    box-shadow: 2px 3px 10px rgb(129, 97, 97);
-}
-.second{
-    background: rgba(61, 243, 70, 0.4);
+    background: rgba(61, 243, 70, 0.3);
 
 }
+.first:hover{
+    box-shadow: 2px 3px 10px rgb(162, 185, 147);
+}
+.second{
+    background: rgba(243, 61, 61, 0.3);
+    
+}
 .second:hover{
-    box-shadow: 2px 3px 10px rgb(151, 243, 90);
+    box-shadow: 2px 3px 10px rgb(204, 179, 179);
 }
 .thirth{
-    background: rgba(224, 213, 64, .4) ;
+    background: rgba(224, 213, 64, .3) ;
     
 }
 .thirth:hover{
-    box-shadow: 2px 3px 10px rgb(227, 230, 84);
+    box-shadow: 2px 3px 10px rgb(226, 226, 204);
 }
 
 .option{
@@ -156,13 +157,17 @@ td p{
 }
 table{
     position: relative;
-    border-spacing: 40px;
+    border-spacing: 3em;
 }
 
+hr{
+    margin-top: 50px;
+}
 /*footer*/
 
+
 footer{
-    margin-top: 50px;
+    
     height: 150px;
     background: rgb(49, 47, 47);
     color: white;

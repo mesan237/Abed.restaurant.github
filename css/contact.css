@@ -2,10 +2,11 @@
     margin: 0;
     
 }
+
 body{
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Courgette', cursive;
+    font-family: 'Merienda One', cursive;
 }
 
 /* header */
@@ -54,6 +55,7 @@ nav a {
     
     text-decoration: none; 
     transition: all ease-in-out .2s;
+    text-transform: uppercase;
 }
 nav a:after {
     transition: all ease-in-out .2s;
@@ -92,7 +94,7 @@ div p{
     position: absolute;
     width: 40%;
     color: white;
-    font-size: 4em;
+    font-size: 3.5em;
     display: block;
     /*background: rgba(109, 18, 18, .5);*/
     margin: auto 0;
@@ -128,10 +130,12 @@ iframe + h2{
 form{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 textarea{
-    width: 400px;
+    width: 70%;
+    height: 100px;
     margin-top: 10px;
 }
 
@@ -145,10 +149,10 @@ div label sup{
     color:red;
 }
 
-#animal{
-    width: 150px;
-    height: auto;
-    padding: 3px;
+.selection{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
 }
 
 #reset{
@@ -156,6 +160,7 @@ div label sup{
     border:rgb(255, 255, 255) 2px solid;
     align-items: center;
     border-radius: 3px;
+    background-color: rgb(187, 184, 184);
 }
 #reset:hover{
     background-color:rgb(37, 37, 37);

@@ -4,8 +4,10 @@
         <meta charset="UTF-8">
         <meta name="Description" content="Mon restaurant Camerounais">
         <title>Mon restaurant, Contact</title>
-        <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Courgette&family=Kings&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/contact.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -43,32 +45,40 @@
                 </div>
                 <div id="desc" >
                     <label for="description">Votre description </label>
-                    <textarea name="pseudo" id="description" cols="30" rows="10"></textarea>
+                    <textarea name="pseudo" id="description" ></textarea>
                 </div>
-                <div id="sex">
-                    <label>Votre sexe <sup>*</sup></label>
-                    Masculin <input type="radio" name="sexe" id="sexeM">
-                    Feminin <input type="radio" name="sexe" id="sexeF">
-                </div>
+                
                 <div class="selection">
-                    <label for="animal">Votre animal préféré </label>
-                    <select name="animal" id="animal">
-                        <option value="">  </option>
-                        <optgroup label="Animaux domestiques">
-                            <option value="chien">Chien</option>
-                            <option value="chat">Chat</option>
-                        </optgroup>
-                        <optgroup label="Animaux aquatiques">
-                            <option value="poisson">Poisson</option>
-                            <option value="baleine">Baleine</option>
-                        </optgroup>
-                    </select>
+                    <div id="sex">
+                        <label>Votre sexe <sup>*</sup></label>
+                        Masculin <input type="radio" name="sexe" id="sexeM">
+                        Feminin <input type="radio" name="sexe" id="sexeF">
+                    </div>
+
+                    <div id="animal">
+                        <label for="animal">Votre animal préféré </label>
+                        <select name="animal">
+                            <option value="">  </option>
+                            <optgroup label="Animaux domestiques">
+                                <option value="chien">Chien</option>
+                                <option value="chat">Chat</option>
+                            </optgroup>
+                            <optgroup label="Animaux aquatiques">
+                                <option value="poisson">Poisson</option>
+                                <option value="baleine">Baleine</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
                 </div>
-                <div>
-                    <input type="checkbox" checked><label>Je certifie que j'ai rempli ces informations</label>
+                <div class="checkbox">
+                    <input type="checkbox" checked>
+                    <label>Je certifie que j'ai rempli ces informations</label>
                 </div>
-                <button type="submit" id="button">Envoyer votre message</button>
-                <input type="reset" value="Annuler" id="reset">
+                <div class="submit">
+                    <button type="submit" id="button">Envoyer votre message</button>
+                    <input type="reset" value="Annuler" id="reset">
+                </div>
             </form>
 
         </section>
