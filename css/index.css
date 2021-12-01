@@ -19,7 +19,7 @@ header nav{
     background-color: rgb(111, 114, 114);
     height: 70px;
     width: 100%;
-    position:sticky;
+    position:fixed;
     z-index: 2;
     box-shadow: 2px 3px 10px rgb(192, 189, 189);
 }
