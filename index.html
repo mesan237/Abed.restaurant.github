@@ -16,15 +16,15 @@
                 <h1>Le Restaurant K.A.N</h1>
                 <ul>
                     <li><a href="#" title="Accueil" class="active">Accueil</a></li>
-                    <li><a href="menu.html" title="Voir le menu">Menu</a></li>
-                    <li><a href="contact.html" title="Nous contacter">Contact</a></li>
+                    <li><a href="#article-2" title="Voir le menu">Menu</a></li>
+                    <li><a href="#article-3" title="Nous contacter">Contact</a></li>
                 </ul>
             </nav>
             <div class="banniere">
                 <p>Bienvenu sur le site web du restaurant K.A.N</p>
             </div>
         </header>
-        <article border="10">
+        <article border="10" class="article-1">
             <table>
                 <tr>
                     <td class="first">
@@ -50,10 +50,170 @@
                     </td>
                 </tr>
             </table>
-            <hr>
         </article>
+
+            <!-- Menu -->
+            <article id="article-2">
+                <table class="plate">
+                    <tr>
+                        <td colspan="2">
+                            <h2>Plats principaux</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Ndolet</strong><br>
+                            Plaintain mur, Manioc, Viande de Boeuf
+                        </td>
+                        <td>1500 FCFA</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Ndolet</strong><br>
+                            Plaintain mur, Manioc, Viande de Boeuf
+                        </td>
+                        <td>1500 FCFA</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Ndolet</strong><br>
+                            Plaintain mur, Manioc, Viande de Boeuf
+                        </td>
+                        <td>1500 FCFA</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Ndolet</strong><br>
+                            Plaintain mur, Manioc, Viande de Boeuf
+                        </td>
+                        <td>1500 FCFA</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Ndolet</strong><br>
+                            Plaintain mur, Manioc, Viande de Boeuf
+                        </td>
+                        <td>1500 FCFA</td>
+                    </tr>
+                </table>
+                <table class="dessert">
+                    <tr>
+                        <td colspan="2">
+                            <h2>Dessert</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Ndolet</strong><br>
+                            Plaintain mur, Manioc, Viande de Boeuf
+                        </td>
+                        <td rowspan="5">1500 FCFA</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Ndolet</strong><br>
+                            Plaintain mur, Manioc, Viande de Boeuf
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Ndolet</strong><br>
+                            Plaintain mur, Manioc, Viande de Boeuf
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Ndolet</strong><br>
+                            Plaintain mur, Manioc, Viande de Boeuf
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Ndolet</strong><br>
+                            Plaintain mur, Manioc, Viande de Boeuf
+                        </td>
+                    </tr>
+                </table>
+        </article>
+
+        <!-- contact -->
+        <section id="article-3">
+            <div>
+                <div class="location">
+                    <h2>Où nous trouver</h2>
+                    <p>
+                        Cameroun <br>
+                        Yaoundé <br>
+                        Elig-Essono <br>
+                        Face Mahima
+                    </p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.6841081034954!2d11.522876314089515!3d3.8777473493244274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bc587ffdc7925%3A0xd5af54d2dcf534a0!2sMahima%20Elig-essono!5e0!3m2!1sfr!2scm!4v1637157456516!5m2!1sfr!2scm" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        
+            <h2>Nous envoyer un mail</h2>
+            <form action="contact.html">
+                <div class="first-column">
+                    <div id="pseudo">
+                        <label for="pseudo">Votre pseudo <sup>*</sup></label>
+                        <input type="text" name="pseudo" id="pseudo" required>
+                    </div>
+                    <div id="desc" >
+                        <label for="description">Votre description </label>
+                        <textarea name="pseudo" id="description" ></textarea>
+                    </div>
+                </div>
+                
+                <div class="second-column">
+                    <div id="mail">
+                        <label for="email" >Votre email <sup>*</sup></label>
+                        <input type="email" name="email" id="email" required placeholder="user@gmail.com">
+                    </div>
+                    
+                    
+                    <div class="selection">
+                        <div id="sex">
+                            <label>Votre sexe <sup>*</sup></label>
+                            Masculin <input type="radio" name="sexe" id="sexeM">
+                            Feminin <input type="radio" name="sexe" id="sexeF">
+                        </div>
+                        <!-- choix de l'animal-->
+                        <div id="animal">
+                            <label for="animal">Votre animal préféré </label>
+                            <select name="animal">
+                                <option value="">  </option>
+                                <optgroup label="Animaux domestiques">
+                                    <option value="chien">Chien</option>
+                                    <option value="chat">Chat</option>
+                                </optgroup>
+                                <optgroup label="Animaux aquatiques">
+                                    <option value="poisson">Poisson</option>
+                                    <option value="baleine">Baleine</option>
+                                </optgroup>
+                            </select>
+                        </div>
+    
+                    </div>
+
+                </div>
+                <div class="button">
+                    <div class="checkbox">
+                        <input type="checkbox" checked>
+                        <label>Je certifie que j'ai rempli ces informations</label>
+                    </div>
+                    <div class="submit">
+                        <button type="submit" id="button">Envoyer votre message</button>
+                        <input type="reset" value="Annuler" id="reset">
+                    </div>
+                </div>
+            </form>
+
+        </section>
+        <hr>
         <footer>
             <address class="address">Cameroun, Yaoundé, Elig-Essono Face Mahima</address>
         </footer>
+
+        <script src="js/index.js"></script>
     </body>
 </html>
