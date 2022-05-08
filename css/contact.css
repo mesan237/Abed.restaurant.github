@@ -6,7 +6,7 @@
 body{
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Merienda One', cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* --- header --- */
@@ -17,7 +17,7 @@ header{
 
 header nav{
     
-    background-color: rgb(111, 114, 114);
+    background-color: rgb(46, 48, 48);
     height: 70px;
     width: 100%;
     position:fixed;
@@ -38,7 +38,7 @@ h1 span{
 
 header li{
     list-style: none;
-    font-size: 1.1em;
+    font-size: 1em;
     float: left;
     margin-right: 30px;
 }
@@ -87,9 +87,9 @@ nav a:hover {
     position: relative;
     top: 72px;
     width: 100%;
-    height: 315px;
+    height: 515px;
     background: linear-gradient(0.25turn, rgba(0,0,0, .95), rgba(0,0,0, .1)),
-    no-repeat url("../img/banniere.jpg");
+    center no-repeat url("../img/banniere.jfif");
     margin-bottom: 10px;
     
 }
@@ -100,6 +100,8 @@ div.banniere p{
     color: white;
     font-size: 3.5em;
     display: block;
+    font-family: 'Merienda One', cursive;
+
 }
 
 /* --- body ----*/

@@ -9,35 +9,34 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* ------------ head ------------ */
-/* ------------ head ------------ */
-
+/* --- header --- */
 header{
     position: relative;
     margin-bottom: 80px;
+    top: 72px;
     width: 100%;
-    height: 515px;
+    height: 550px;
     background: linear-gradient(0.25turn, rgba(0,0,0, .95), rgba(0,0,0, .1)),
     center no-repeat url("../img/banniere.jfif");
-    
+    margin-bottom: 10px;
 }
 
 /* nav-bar */
 
- header nav{
+/* header nav{
     
-    /* background-color: rgb(46, 48, 48);
-    opacity: 2; */
+    background-color: rgb(46, 48, 48);
+    opacity: 2;
     height: 70px;
     width: 100%;
-    /* position:fixed;
+    position:fixed;
     z-index: 2;
-    box-shadow: 2px 3px 10px rgb(192, 189, 189); */
-} 
+    box-shadow: 2px 3px 10px rgb(192, 189, 189);
+} */
 /* h1 Restaurant*/
 header h1 {
     position: absolute;
-    top: 5%;
+    top: 25%;
     margin: auto 0;
     font-family: 2.5em;
     color: aqua;
@@ -55,7 +54,7 @@ nav {
 ul{
     position: absolute;
     right: 0;
-    top: 5%;
+    top: 25%;
     float: right;
     display: block;
     
@@ -95,10 +94,11 @@ nav a:hover {
 /*image in background*/
 .banniere{
     
+    
 }
 
 /*Welcome text style*/
-div.banniere p{
+div p{
     position: absolute;
     width: 40%;
     color: white;
@@ -108,25 +108,56 @@ div.banniere p{
     font-family: 'Merienda One', cursive;
 
 }
-/* ------------ body ------------ */
-/* ------------ body ------------ */
 
-/* .... article-1 .... */
-.article-1 table{
+/* --- body --- */
+
+/*menu */
+div.article{
+    margin: 170px 0 90px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.plate tr:first-child td:first-child, .dessert tr:first-child td:first-child{
+    text-align: center;
+    color: rgba(255, 51, 0, 0.9);
+}
+.clear{
+    clear: both;
+}
+
+table td:nth-child(2){
+    background-color: rgba(21, 255, 0, 0.5);
+    padding: 17px;
+    font-weight: bold;
+    color: rgba(54, 53, 52, 0.9);
+}
+table td:nth-child(1){
+    background-color: rgba(214, 212, 210, 0.5);
+    padding: 17px;
+}
+
+/*contact*/
+article{
+    border-bottom: 600px;
+
+}
+table{
     width: 100%;
 }
-.article-1 td{
+ td{
     padding: 20px;
     color: rgb(61, 61, 61);
 
 }
-.article-1 td h2{
+article td h2{
     text-align: center;
 }
 
-.article-1 td p{
+td p{
     text-align: justify;
-    margin: 30px 0;
+    margin: 10px 0;
     font-size: 15px;
 }
 
@@ -154,6 +185,7 @@ div.banniere p{
 
 .option{
     text-align: center;
+    
 }
 .about{
     text-align: center;
@@ -161,56 +193,24 @@ div.banniere p{
 .event{
     text-align: center;
 }
-.article-1 table{
+table{
     position: relative;
     border-spacing: 3em;
 }
-/* .... article-2 .... */
 
-#article-2{
-    margin: 170px 0 90px 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+hr{
+    margin-top: 50px;
 }
 
-#article-2 .plate tr:first-child td:first-child, .dessert tr:first-child td:first-child{
-    text-align: center;
-    color: rgba(255, 51, 0, 0.9);
-}
-.clear{
-    clear: both;
-}
+ /* --- contact --- */
 
-#article-2 table td:nth-child(2){
-    background-color: rgba(21, 255, 0, 0.5);
-    padding: 17px;
-    font-weight: bold;
-    color: rgba(54, 53, 52, 0.9);
-}
-#article-2 table td:nth-child(1){
-    background-color: rgba(214, 212, 210, 0.5);
-    padding: 17px;
-}
-
-/* .... article-3 .... */
-/* .... article-3 .... */
-
-section{
+ section{
     margin: 80px 0;
-    
 }
 
-#article-3 form{
-    width: 80%;
-    margin: 0 auto;
-    background-color: rgb(27, 165, 199);
-    opacity: .8;
-    border-radius: 20px;
-}
 section > div{
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-around;
     align-items: center;
     /* flex-wrap: wrap; */
     margin: 150px 0 50px 0 ;
@@ -247,7 +247,7 @@ section form{
     margin-top: 50px;
 }
 #pseudo input, #mail input{
-    width: 80%;
+    width: 70%;
     height: 30px;
     border-radius: 3px;
     border: 1px solid rgb(92, 91, 91);
@@ -266,11 +266,11 @@ section form{
 form{
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
+    align-items: center;
 }
 
 textarea{
-    width: 80%;
+    width: 70%;
     height: 100px;
     margin-top: 10px;
 }
@@ -288,7 +288,7 @@ div label sup{
 .selection{
     display: flex;
     flex-flow: column;
-    /* justify-content: space-around; */
+    justify-content: space-around;
 }
 form .button{
     display: flex;
@@ -322,8 +322,8 @@ form .button{
     cursor:pointer;
 }
 
-/* ------------ footer ------------ */
-/* ------------ footer ------------ */
+/* --- footer --- */
+
 footer address{
     display: block;
     position: absolute;
@@ -334,9 +334,8 @@ footer address{
 }
 footer{
     position: relative;
-    height: 300px;
+    height: 150px;
     background: rgb(49, 47, 47);
     color: white;
 }
-
 
